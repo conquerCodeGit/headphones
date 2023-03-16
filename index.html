@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <!-- <link rel='preload' href='./css/style.min.css' as='style' /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero</title>
+</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__wrapper">
+    <div class="header__container">
+      <div class="header__body">
+        <a href="/" class="header__logo">
+          <!-- <img src="img/svg/logo.svg" alt="logo" /> -->
+          <svg class="icon-logo icon-logo_header">
+            <use href="./sprites/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <svg class="icon-search">
+                  <use href="./sprites/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item cart">
+                <svg class="icon-cart">
+                  <use href="./sprites/sprite.svg#icon-cart"></use>
+                </svg>
+              <ul class="cart__list cart-list"></ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <svg class="icon-profile">
+                  <use href="./sprites/sprite.svg#icon-profile"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icon">
+          <button class="menu-btn" type="button">
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__close"></span>
+          </button>
+        </div>
+      </div>
+      <div class="hero__sidebar sidebar-hero">
+        <ul class="sidebar-hero__list">
+          <li class="sidebar-hero__item" style="--i: 1">
+            <a href="#Home" class="sidebar-hero__link">Home</a>
+          </li>
+          <li class="sidebar-hero__item" style="--i: 1">
+            <a href="#Collection" class="sidebar-hero__link">Collection</a>
+          </li>
+          <li class="sidebar-hero__item" style="--i: 2">
+            <a href="#Products" class="sidebar-hero__link">Products</a>
+          </li>
+          <li class="sidebar-hero__item" style="--i: 3">
+            <a href="#Kit" class="sidebar-hero__link">Kit</a>
+          </li>
+          <li class="sidebar-hero__item" style="--i: 4">
+            <a href="#Subscribe" class="sidebar-hero__link">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+      <main class="main">
+        <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <section class="hero" id="Home">
+          <div class="hero__container">
+            <div class="hero__body">
+              <div class="hero__image _imw" data-mouse-parallax-speed="8">
+                <img src="img/hero/img1.png" alt="red headphone" />
+              </div>
+              <div class="hero__content content-hero">
+                <h1 data-da=".hero__body,767.98,first" class="content-hero__title">
+                  <span>Hear it. Feel it</span>
+                  <br />
+                  Move with the music
+                </h1>
+                <div class="content-hero__prices">
+                  <p class="content-hero__price content-hero__price_new">$ 435</p>
+                  <p class="content-hero__price content-hero__price_old">$ 465</p>
+                </div>
+                <div class="content-hero__button">
+                  <a href="#" class="g-button g-button_primary">BUY NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <section class="latest" id="Collection">
+          <div class="latest__container">
+            <h2 class="latest__title">Our Latest colour collection 2021</h2>
+            <div class="latest__slider slider-latest">
+              <div class="slider-latest__wrapper">
+                <div class="slider-latest__slide slide-slider-latest">
+                  <div class="slide-slider-latest__image _imw">
+                    <img src="img/latest/im3.jpg" alt="headphones product" loading="lazy" />
+                  </div>
+                </div>
+                <div class="slider-latest__slide slide-slider-latest">
+                  <div class="slide-slider-latest__image _imw">
+                    <img src="img/latest/im2.jpg" alt="headphones product" loading="lazy" />
+                  </div>
+                </div>
+                <div class="slider-latest__slide slide-slider-latest">
+                  <div class="slide-slider-latest__image _imw">
+                    <img src="img/latest/im1.jpg" alt="headphones product" loading="lazy" />
+                  </div>
+                </div>
+                <div class="slider-latest__slide slide-slider-latest">
+                  <div class="slide-slider-latest__image _imw">
+                    <img src="img/latest/im2.jpg" alt="headphones product" loading="lazy" />
+                  </div>
+                </div>
+                <div class="slider-latest__slide slide-slider-latest">
+                  <div class="slide-slider-latest__image _imw">
+                    <img src="img/latest/im3.jpg" alt="headphones product" loading="lazy" />
+                  </div>
+                </div>
+                <div class="slider-latest__slide slide-slider-latest">
+                  <div class="slide-slider-latest__image _imw">
+                    <img src="img/latest/im2.jpg" alt="headphones product" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="slider-latest__button slider-latest__button_prev">
+                <svg class="icon-arrow">
+                  <use href="./sprites/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+              <div class="slider-latest__button slider-latest__button_next">
+                <svg class="icon-arrow">
+                  <use href="./sprites/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <section class="features" id="Features">
+          <div class="features__container">
+            <div class="features__body">
+              <h2 class="features__title">Good headphones and loud music is all you need</h2>
+              <div class="features__types">
+                <div class="features__list">
+                  <div class="features__item item-features">
+                    <div class="item-features__image">
+                      <svg class="icon-charge">
+                        <use href="./sprites/sprite.svg#icon-charge"></use>
+                      </svg>
+                    </div>
+                    <div class="item-features__content">
+                      <p class="item-features__title">Battery</p>
+                      <p class="item-features__text">Battery 6.2V-AAC codec</p>
+                      <a href="#" class="item-features__more">Lern More</a>
+                    </div>
+                  </div>
+                  <div class="features__item item-features">
+                    <div class="item-features__image">
+                      <svg class="icon-bluetooth">
+                        <use href="./sprites/sprite.svg#icon-bluetooth"></use>
+                      </svg>
+                    </div>
+                    <div class="item-features__content">
+                      <p class="item-features__title">Bluetooth</p>
+                      <p class="item-features__text">Battery 6.2V-AAC codec</p>
+                      <a href="#" class="item-features__more">Lern More</a>
+                    </div>
+                  </div>
+
+                  <div class="features__item item-features">
+                    <div class="item-features__image">
+                      <svg class="icon-micro">
+                        <use href="./sprites/sprite.svg#icon-micro"></use>
+                      </svg>
+                    </div>
+                    <div class="item-features__content">
+                      <p class="item-features__title">Microphone</p>
+                      <p class="item-features__text">Battery 6.2V-AAC codec</p>
+                      <a href="#" class="item-features__more">Lern More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="features__image _imw" data-mouse-parallax-speed="8">
+                <img src="img/features/img1.png" alt="headphones" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <section class="products" id="Products">
+          <div class="products__container">
+            <div class="products__titles">
+              <h2 class="products__title">Our Latest Product</h2>
+              <h3 class="products__sub-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis nunc ipsum aliquam, ante.
+              </h3>
+            </div>
+
+            <div class="products__list">
+              <div class="products__item item-products" data-product-id="1">
+                <div class="item-products__cart">
+                  <svg class="icon-buy-cart">
+                    <use href="./sprites/sprite.svg#icon-buy-cart"></use>
+                  </svg>
+                </div>
+                <a href="#" class="item-products__image _imw">
+                  <img src="img/products/img1.png" alt="headphones" loading="lazy"/>
+                </a>
+                <div class="item-products__content">
+                  <div class="item-products__rating rating-item-products">
+                    <div class="rating-item-products__starts">
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div>
+                    <div class="rating-item-products__number">4.50</div>
+                  </div>
+                  <div class="item-products__description description-item-products">
+                    <div class="description-item-products__name">Read Headphone</div>
+                    <div class="description-item-products__price">$ 256</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__item item-products" data-product-id="2">
+                <div class="item-products__cart">
+                  <svg class="icon-buy-cart">
+                    <use href="./sprites/sprite.svg#icon-buy-cart"></use>
+                  </svg>
+                </div>
+                <a href="#" class="item-products__image _imw">
+                  <img src="img/products/img2.png" alt="headphones" loading="lazy"/>
+                </a>
+                <div class="item-products__content">
+                  <div class="item-products__rating rating-item-products">
+                    <div class="rating-item-products__starts">
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div>
+                    <div class="rating-item-products__number">4.50</div>
+                  </div>
+                  <div class="item-products__description description-item-products">
+                    <div class="description-item-products__name">Blue Headphone</div>
+                    <div class="description-item-products__price">$ 235</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__item item-products" data-product-id="3">
+                <div class="item-products__cart">
+                  <svg class="icon-buy-cart">
+                    <use href="./sprites/sprite.svg#icon-buy-cart"></use>
+                  </svg>
+                </div>
+                <a href="#" class="item-products__image _imw">
+                  <img src="img/products/img3.png" alt="headphones" loading="lazy"/>
+                </a>
+                <div class="item-products__content">
+                  <div class="item-products__rating rating-item-products">
+                    <div class="rating-item-products__starts">
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="icon-star">
+                        <use href="./sprites/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div>
+                    <div class="rating-item-products__number">4.50</div>
+                  </div>
+                  <div class="item-products__description description-item-products">
+                    <div class="description-item-products__name">Green Headphone</div>
+                    <div class="description-item-products__price">$ 245</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <section class="kit" id="Kit">
+          <div class="kit__container">
+            <div class="kit__body">
+              <div class="kit__image _imw" data-mouse-parallax-speed="7">
+                <img src="img/kit/img1.jpg" alt="headphones kit" loading="lazy"/>
+              </div>
+              <div class="kit__content">
+                <h2 data-da=".kit__body,767.98,first" class="kit__title">Whatever you get in the box</h2>
+                <ul class="kit__list">
+                  <li class="kit__item">
+                    <svg class="icon-arrow-in-circle">
+                      <use href="./sprites/sprite.svg#icon-arrow-in-circle"></use>
+                    </svg>
+                    <span>5A Charger</span>
+                  </li>
+                  <li class="kit__item">
+                    <svg class="icon-arrow-in-circle">
+                      <use href="./sprites/sprite.svg#icon-arrow-in-circle"></use>
+                    </svg>
+                    <span>Extra battery</span>
+                  </li>
+                  <li class="kit__item">
+                    <svg class="icon-arrow-in-circle">
+                      <use href="./sprites/sprite.svg#icon-arrow-in-circle"></use>
+                    </svg>
+                    <span>Sophisticated bag</span>
+                  </li>
+                  <li class="kit__item">
+                    <svg class="icon-arrow-in-circle">
+                      <use href="./sprites/sprite.svg#icon-arrow-in-circle"></use>
+                    </svg>
+                    <span>User manual guide</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <section class="subscribe" id="Subscribe">
+          <div class="subscribe__container">
+            <div class="subscribe__body">
+              <div class="subscribe__text-content">
+                <h2 class="subscribe__title">Subscribe</h2>
+                <h3 class="subscribe__sub-title">Lorem ipsum dolor sit amet, consectetur</h3>
+              </div>
+              <form action="#" novalidate class="subscribe__form">
+                <input
+                  class="subscribe__input"
+                  type="email"
+                  placeholder="Enter Your email"
+                  data-required="email"
+                  data-error="Неверный email"
+                  autocomplete="off"
+                  inputmode="email" />
+                <button type="sumbit" class="subscribe__button g-button g-button_secondary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="preloader-wrapper">
+          <div class="preloader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <span>Loading</span>
+          </div>
+        </div>
+        <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+      </main>
+      <!-- > -------------------------------------------------------------------------------------------------------------------------------------------- -->
+      <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      <a href="/" class="footer__logo ">
+        <svg class="icon-logo">
+          <use href="./sprites/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="footer__menu menu-footer">
+        <ul class="menu-footer__list">
+          <li class="menu-footer__item">
+            <a href="#" class="menu-footer__link">Home</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="#" class="menu-footer__link">About</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="#" class="menu-footer__link">Product</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__social social-footer">
+        <ul class="social-footer__list">
+          <li class="social-footer__item">
+            <a href="#" class="social-footer__link">
+              <svg class="icon-insta">
+                <use href="./sprites/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-footer__item">
+            <a href="#" class="social-footer__link">
+              <svg class="icon-twit">
+                <use href="./sprites/sprite.svg#icon-twit"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-footer__item">
+            <a href="#" class="social-footer__link">
+              <svg class="icon-fb">
+                <use href="./sprites/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script type="module" src="./js/app.min.js"></script>
+  </body>
+</html>
